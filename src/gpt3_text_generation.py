@@ -26,9 +26,10 @@ false = dff[['statement']].loc[df['label'] == 'false']
 true = dff[['statement']].loc[df['label'] == 'true']
 false['statement']= false['statement'].astype(str)
 true['statement'] = true['statement'].astype(str)
+true_50_subset = true['statement'].sample(frac=0.5)
 
 generator = pipeline('text-generation', model='EleutherAI/gpt-neo-1.3B')
-all_text_results = generator((list(true['statement'])), max_length=200, do_sample=True, temperature=0.9, top_k = 50)
-all_text_results.to_csv('True_Text_Generated.csv')
+all_text_results = generator((list(true_50_subset)), max_length=200, do_sample=True, temperature=0.9, top_k = 50)
+all_text_results.to_csv('/Users/azizamirsaidova/Documents/GitHub/fake-news-detection/output/True_Text_Generated.csv')
 
 
