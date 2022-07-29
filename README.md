@@ -3,7 +3,7 @@
 ## Project Objectives
 Generate “true” and “fake” news using pre-trained transfomer model GPT-Neo 1.3B to perform text generation using LIAR dataset including 12.8 K short stataments.
 
-Two Main Goals:
+Main Goals:
 1. To assess whether this approach is an effective way to create compa- rable machine-generated real and fake news
 2. To ascertain if there are any detectable stylometric or linguistic differences between real and fake news generated in this way.
 
@@ -20,12 +20,12 @@ The structure of the repository looks like the following.
 ├── src              # Source code
 ```
 
-## The Data
+## Data
 
 LIAR dataset consists of 12.8K human-labeled short statements occurring in various contexts collected from politifact.com. 
 Based on the evaluation and justification of a www.politifact.com editor, each statement is labeled for truthfulness with one of six fine-grained ratings: pants on fire, false, barely true, half true, mostly true, and true. For the purposes of this project, we are only interested in the sentences labeled “false” and “true.” 
 
-## Method
+## Methods
 
 There are three main parts of the project: text generation, conducting linguistic feature analysis and fake new detection 
 
@@ -56,7 +56,8 @@ Count Vectorizer and TF-IDF of the data is obtained which provides output in a s
 * Decision Tree Classifier
 * BERT
 
-For further details, refer to paper report. 
+For further details, refer to paper [report.](https://github.com/azizamirsaidova/fake-news-detection/blob/main/paper_report/Final%20Paper.pdf)
+
 ### References
 
 1. Wang, W. Y. (2017). " liar, liar pants on fire": A new benchmark dataset for fake news detection. arXiv preprint arXiv:1705.00648.
