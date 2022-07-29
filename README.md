@@ -29,7 +29,7 @@ Based on the evaluation and justification of a www.politifact.com editor, each s
 
 There are three main parts of the project: text generation, conducting linguistic feature analysis and fake new detection 
 
-## 1. Text Generation
+### 1. Text Generation
 
 Text generation is conducted using GPT-Neo 1.3B, a pre-trained transformer model designed using EleutherAI’s replication of the GPT-3 architecture, GPT-Neo 1.3B was trained on the Pile dataset for 380B tokens over 362,000 steps as a masked autoregressive language model.
 
@@ -37,7 +37,7 @@ From the LIAR training dataset, we extracted the first 1000 true and false state
 
 Paremeters were 200 of max length, 0.9,temperature, and top k sampling of 50. This process yielded a paragraph of text for each statement, for a total of 1000 “fake news” paragraphs and 1000 “real news” paragraphs.
 
-## 2. Lingustic Feature Analysis
+### 2. Lingustic Feature Analysis
 
 Following linguistic analysis are created:
 
@@ -46,7 +46,7 @@ Following linguistic analysis are created:
 3. Zipf Distribution
 
 
-## 3. Fake & True News Classification
+### 3. Fake & True News Classification
 
 Count Vectorizer and TF-IDF of the data is obtained which provides output in a sparse matrix representing the text. Then, following classification models are trained on machine generated true and fake data.
 
