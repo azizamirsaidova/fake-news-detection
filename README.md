@@ -1,4 +1,4 @@
-# Linguistic Evaluation of Machine-Generated "Real" and "Fake" News
+# Linguistic Evaluation of Machine-Generated "Real" and "Fake" News using GPT
 
 ## Project Objectives
 Generate “true” and “fake” news using pre-trained transfomer model GPT-Neo 1.3B to perform text generation using LIAR dataset including 12.8 K short stataments.
@@ -39,7 +39,7 @@ Paremeters were 200 of max length, 0.9,temperature, and top k sampling of 50. Th
 
 ### 2. Lingustic Feature Analysis
 
-Following linguistic analysis are created:
+Following linguistic analysis are conducted:
 
 1. Named Entity Recognition
 2. Referential Words
